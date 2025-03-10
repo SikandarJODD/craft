@@ -1,0 +1,16 @@
+{
+	"$schema": "https://unpkg.com/jsrepo@1.36.0/schemas/registry-config.json",
+	"dirs": [
+		"./src/lib/components/craft"
+	],
+	"doNotListBlocks": [],
+	"doNotListCategories": [],
+	"listBlocks": [],
+	"listCategories": [],
+	"excludeDeps": [],
+	"includeBlocks": [],
+	"includeCategories": [],
+	"excludeBlocks": [],
+	"excludeCategories": [],
+	"preview": false
+}
