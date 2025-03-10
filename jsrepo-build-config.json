@@ -3,14 +3,18 @@
 	"dirs": [
 		"./src/lib/components"
 	],
+	"includeBlocks": [],
+	"includeCategories": [
+		"blocks"
+	],
+	"excludeBlocks": [],
+	"excludeCategories": [],
 	"doNotListBlocks": [],
 	"doNotListCategories": [],
 	"listBlocks": [],
 	"listCategories": [],
-	"excludeDeps": ["svelte"],
-	"includeBlocks": [],
-	"includeCategories": ["blocks"],
-	"excludeBlocks": [],
-	"excludeCategories": [],
+	"excludeDeps": [
+		"svelte"
+	],
 	"preview": true
 }
