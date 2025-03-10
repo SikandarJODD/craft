@@ -1,0 +1,191 @@
+{
+	"categories": [
+		{
+			"name": "craft",
+			"blocks": [
+				{
+					"name": "Article",
+					"directory": "src/lib/components/blocks/craft",
+					"category": "craft",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Article.svelte"
+					],
+					"localDependencies": [
+						"craft/craft"
+					],
+					"_imports_": {
+						"./craft": "{{craft/craft}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "Box",
+					"directory": "src/lib/components/blocks/craft",
+					"category": "craft",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Box.svelte"
+					],
+					"localDependencies": [
+						"craft/craft"
+					],
+					"_imports_": {
+						"./craft": "{{craft/craft}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "Container",
+					"directory": "src/lib/components/blocks/craft",
+					"category": "craft",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Container.svelte"
+					],
+					"localDependencies": [
+						"craft/craft"
+					],
+					"_imports_": {
+						"./craft": "{{craft/craft}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "craft",
+					"directory": "src/lib/components/blocks/craft",
+					"category": "craft",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"craft.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": [
+						"clsx@^2.1.1",
+						"tailwind-merge@^3.0.2"
+					]
+				},
+				{
+					"name": "index",
+					"directory": "src/lib/components/blocks/craft",
+					"category": "craft",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"craft/Layout",
+						"craft/Section",
+						"craft/Container",
+						"craft/Box",
+						"craft/Main",
+						"craft/Prose",
+						"craft/Article"
+					],
+					"_imports_": {
+						"./Layout.svelte": "{{craft/Layout}}.svelte",
+						"./Section.svelte": "{{craft/Section}}.svelte",
+						"./Container.svelte": "{{craft/Container}}.svelte",
+						"./Box.svelte": "{{craft/Box}}.svelte",
+						"./Main.svelte": "{{craft/Main}}.svelte",
+						"./Prose.svelte": "{{craft/Prose}}.svelte",
+						"./Article.svelte": "{{craft/Article}}.svelte"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "Layout",
+					"directory": "src/lib/components/blocks/craft",
+					"category": "craft",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Layout.svelte"
+					],
+					"localDependencies": [
+						"craft/craft"
+					],
+					"_imports_": {
+						"./craft": "{{craft/craft}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "Main",
+					"directory": "src/lib/components/blocks/craft",
+					"category": "craft",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Main.svelte"
+					],
+					"localDependencies": [
+						"craft/craft"
+					],
+					"_imports_": {
+						"./craft": "{{craft/craft}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "Prose",
+					"directory": "src/lib/components/blocks/craft",
+					"category": "craft",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Prose.svelte"
+					],
+					"localDependencies": [
+						"craft/craft"
+					],
+					"_imports_": {
+						"./craft": "{{craft/craft}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "Section",
+					"directory": "src/lib/components/blocks/craft",
+					"category": "craft",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Section.svelte"
+					],
+					"localDependencies": [
+						"craft/craft"
+					],
+					"_imports_": {
+						"./craft": "{{craft/craft}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		}
+	]
+}

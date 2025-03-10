@@ -1,13 +1,13 @@
 {
-	"$schema": "https://unpkg.com/jsrepo@1.36.0/schemas/registry-config.json",
+	"$schema": "https://unpkg.com/jsrepo@1.44.1/schemas/registry-config.json",
 	"dirs": [
-		"./src/lib/components/craft"
+		"./src/lib/components/blocks"
 	],
 	"doNotListBlocks": [],
 	"doNotListCategories": [],
 	"listBlocks": [],
 	"listCategories": [],
-	"excludeDeps": [],
+	"excludeDeps": ["svelte"],
 	"includeBlocks": [],
 	"includeCategories": [],
 	"excludeBlocks": [],
