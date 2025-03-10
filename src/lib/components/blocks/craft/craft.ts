@@ -1,5 +1,6 @@
-// craft-ds, v0.3.3
-// This is a design system for building responsive layouts in React and handling prose
+// This is a design system for building responsive layouts in Svelte and handling prose
+// Inspired from : https://craft-ds.com
+
 
 import { type ClassValue, clsx } from "clsx";
 import type { Snippet } from "svelte";
