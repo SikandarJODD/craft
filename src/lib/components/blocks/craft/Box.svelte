@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { cn } from "$lib/utils";
   import { getResponsiveClass, styles, type BoxProps } from "./craft";
 
   let {
@@ -54,7 +53,7 @@
 </script>
 
 <div
-  class={cn([
+  class={[
     cols || rows ? "grid" : "flex",
     cols && getResponsiveClass(cols, colsClasses),
     rows && getResponsiveClass(rows, colsClasses),
@@ -62,7 +61,7 @@
     getResponsiveClass(wrap, wrapClasses),
     getResponsiveClass(gap, gapClasses),
     _class,
-  ])}
+  ]}
   {id}
   {style}
 >
