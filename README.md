@@ -2,17 +2,13 @@
 
 Svelte Craft is a lightweight, flexible design system for building responsive layouts in Svelte and handling prose. It provides a set of foundational components that make it easy to create consistent, maintainable layouts while leveraging the power of Tailwind CSS.
 
-
 ## Credits
+
 This is a Svelte port of **[Craft](https://github.com/brijr/craft)**, originally created by [Bridger Tower](https://github.com/brijr).
 The original project was built using Next.js and Tailwind CSS, and I have ported it to Svelte while preserving its core design and functionality.
 
 All credit for the original idea, design, and implementation goes to **Bridger Tower**.
 This port is simply an adaptation for the Svelte ecosystem.
-
-Original Repository: [Craft by Bridger Tower](https://github.com/brijr/craft)
-
-If you find this port useful, consider supporting the original project as well!
 
 ## Features
 
@@ -25,7 +21,7 @@ If you find this port useful, consider supporting the original project as well!
 
 ## Requirements
 
-- Sveltekit or higher (recommended 20+)
+- Sveltekit
 - shadcn-svelte (for the color system)
 - Tailwind CSS
 - TypeScript (recommended)
@@ -33,15 +29,69 @@ If you find this port useful, consider supporting the original project as well!
 ## Quick Start
 
 ```bash
-# Using npm
 npx jsrepo add --repo github/sikandarjodd/craft
 ```
 
 The installer will:
 
-1. Check your environment and dependencies
-2. Install and configure required packages
-3. Set up the Craft component in your project
+1. Install and configure required packages - tailiwnd-merge and clsx
+2. Set up the Craft component in your project
+3. Add <code>Layout, Prose, Container, Section</code> Components in you project
+
+## Usage
+
+### Example 1
+
+```svelte
+<script>
+  import { Prose } from "$lib/components/blocks/craft";
+  import { marked } from "marked";
+  let readme = `
+  # Learn Sveltekit Blog
+  web development for the rest of us
+  `;
+</script>
+
+<Prose>
+  {@html marked(readme)}
+</Prose>
+```
+
+### Example 2
+
+```svelte
+<script>
+  import { Prose } from "$lib/components/blocks/craft";
+</script>
+
+<Prose>
+  <h1>Learn Sveltekit</h1>
+  <p>web development for the rest of us</p>
+</Prose>
+
+```
+
+### Example 3
+
+```svelte
+<script>
+  import { Container, Section } from "$lib/components/blocks/craft";
+
+  // Container : Centers content and provides consistent horizontal padding.
+  // Section : A semantic section container for grouping related content.
+</script>
+
+<Container>
+  <Section>
+    <h1>Usage</h1>
+    <p>
+      This is a simple example of how to use the <code>Container</code> and
+      <code>Section</code> components.
+    </p>
+  </Section>
+</Container>
+
+```
 
 ## Core Components
 
@@ -108,34 +158,10 @@ Similar to Article but without max-width constraints and header spacing. Perfect
 </Prose>
 ```
 
-### Box
-
-A powerful layout component that supports both Flexbox and Grid layouts with responsive properties.
-
-#### Type-Safe Props
-
-```typescript
-interface BoxProps {
-  direction?: ResponsiveValue<"row" | "col">;
-  wrap?: ResponsiveValue<"wrap" | "nowrap">;
-  gap?: ResponsiveValue<0 | 1 | 2 | 3 | 4 | 5 | 6 | 8 | 10 | 12>;
-  cols?: ResponsiveValue<1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12>;
-  rows?: ResponsiveValue<1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12>;
-}
-```
-
-#### Flex Layout Example:
-
-```svelte
-<Box direction={{ base: "col", md: "row" }} wrap="wrap" gap={4}>
-  <div>Item 1</div>
-  <div>Item 2</div>
-</Box>
-```
-
 #### Grid Layout Example:
 
 ```svelte
+<!-- Not Responsive -->
 <Box cols={3} gap={4}>
   <div>Grid Item 1</div>
   <div>Grid Item 2</div>
@@ -221,3 +247,7 @@ All components accept a \`class\` prop for custom styling:
   </Box>
 </Article>
 ```
+
+## License
+
+Published under the [MIT](https://github.com/SikandarJODD/craft/blob/master/LICENSE) license.
