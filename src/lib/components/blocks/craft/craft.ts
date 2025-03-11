@@ -1,7 +1,6 @@
 // This is a design system for building responsive layouts in Svelte and handling prose
 // Inspired from : https://craft-ds.com
 
-
 import { type ClassValue, clsx } from "clsx";
 import type { Snippet } from "svelte";
 import { twMerge } from "tailwind-merge";
@@ -115,6 +114,9 @@ export let styles = {
       "[&_em]:italic",
       "[&_del]:line-through",
       "[&_small]:text-sm [&_small]:font-medium [&_small]:leading-none",
+      // "[&_.muted]:text-muted-foreground",
+      // "[&_.lead]:text-lg [&_.lead]:font-medium",
+      // "[&_.large]:text-2xl [&_.large]:font-medium",
       "[&_sub]:text-sm [&_sup]:text-sm",
     ],
     headerSpacing: [
