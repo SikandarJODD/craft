@@ -5,7 +5,7 @@
 
 <Prose>
   <Section>
-    <Container class='!pt-0'>
+    <Container class=''>
       <div class="border bg-accent/50 p-6">
         Svelte Craft is a minimalist Design System that combines a single component
         file and a single CSS file with Svelte best practices for building

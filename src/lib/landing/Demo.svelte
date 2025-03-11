@@ -1,18 +1,21 @@
 <script lang="ts">
-  import { Prose } from "$lib/components/blocks/craft";
   import type { Snippet } from "svelte";
 
   let {
     children,
     attribute,
     vertical,
-  }: { children: Snippet; attribute: string; vertical?: boolean } = $props();
+    class: _class = "",
+  }: {
+    children: Snippet;
+    attribute: string;
+    vertical?: boolean;
+    class?: string;
+  } = $props();
 </script>
 
 <section
-  class={`grid ${
-    vertical ? "divide-y" : "sm:divide-x sm:grid-cols-[8rem_3fr]"
-  }`}
+  class={["grid", vertical ? "divide-y" : "sm:divide-x sm:grid-cols-[8rem_3fr]", _class]}
 >
   <div class="p-2 sm:p-4 bg-accent/50 border-b sm:border-b-0">
     <p class="sr-only">HTML Attribute</p>

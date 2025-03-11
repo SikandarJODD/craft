@@ -17,7 +17,7 @@ Svelte Craft is a lightweight, flexible design system for building responsive la
 ## Requirements
 
 - Sveltekit or higher (recommended 20+)
-- shadcn-svelte (for the color system)
+- Shadcn-svelte (for the color system)
 - Tailwind CSS
 - TypeScript (recommended)
 
@@ -105,9 +105,6 @@ Similar to Article but without max-width constraints and header spacing. Perfect
 </Prose>
 \`\`\`
 
-### Box
-
-A powerful layout component that supports both Flexbox and Grid layouts with responsive properties.
 
 #### Type-Safe Props
 
@@ -121,24 +118,6 @@ interface BoxProps {
 }
 \`\`\`
 
-#### Flex Layout Example:
-
-\`\`\`svelte
-<Box direction={{ base: "col", md: "row" }} wrap="wrap" gap={4}>
-  <div>Item 1</div>
-  <div>Item 2</div>
-</Box>
-\`\`\`
-
-#### Grid Layout Example:
-
-\`\`\`svelte
-<Box cols={{ base: 1, md: 2, lg: 3 }} gap={4}>
-  <div>Grid Item 1</div>
-  <div>Grid Item 2</div>
-  <div>Grid Item 3</div>
-</Box>
-\`\`\`
 
 ## Typography System
 
@@ -194,7 +173,7 @@ All components accept a \`class\` prop for custom styling:
     <Section>
       <Container>
         <h1>Page Title</h1>
-        <Box cols={{ base: 1, md: 2 }} gap={6}>
+        <Box cols={2} gap={6}>
          <!-- Content -->
         </Box>
       </Container>
@@ -213,7 +192,7 @@ All components accept a \`class\` prop for custom styling:
   <h2>Section Title</h2>
   <p>Section content...</p>
 
-  <Box cols={{ base: 1, md: 2 }} gap={4}>
+  <Box cols={3} gap={4}>
     <!-- Grid content  -->
   </Box>
 </Article>

@@ -87,8 +87,8 @@
         <a href="/">Svelte Craft Design System</a>
       </h1>
       <p class="text-muted-foreground max-w-prose">
-        Svelte Craft is a lightweight, flexible design system for building responsive
-        layouts in Svelte and handling prose.
+        Svelte Craft is a lightweight, flexible design system for building
+        responsive layouts in Svelte and handling prose.
       </p>
       <CopyCode />
 
@@ -96,15 +96,11 @@
         <a class="hover:underline underline-offset-4" href="/start">
           + Get Started with Svelte Craft
         </a>
-        <a
-          class="hover:underline underline-offset-4"
-          href="https://github.com/SikandarJODD/craft"
-          target="_blank"
-        >
-          + View Source Code
-        </a>
         <a class="hover:underline underline-offset-4" href="/examples">
           + View Examples</a
+        >
+        <a class="hover:underline underline-offset-4" href="/examples/article">
+          + View Article Example</a
         >
       </div>
     </Container>
