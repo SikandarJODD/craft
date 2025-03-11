@@ -35,12 +35,6 @@ If you find this port useful, consider supporting the original project as well!
 ```bash
 # Using npm
 npx jsrepo add --repo github/sikandarjodd/craft
-
-# Using pnpm (recommended)
-pnpx jsrepo add --repo github/sikandarjodd/craft
-
-# Using yarn
-yarn npx jsrepo add --repo github/sikandarjodd/craft
 ```
 
 The installer will:
@@ -142,7 +136,7 @@ interface BoxProps {
 #### Grid Layout Example:
 
 ```svelte
-<Box cols={{ base: 1, md: 2, lg: 3 }} gap={4}>
+<Box cols={3} gap={4}>
   <div>Grid Item 1</div>
   <div>Grid Item 2</div>
   <div>Grid Item 3</div>
@@ -203,7 +197,7 @@ All components accept a \`class\` prop for custom styling:
     <Section>
       <Container>
         <h1>Page Title</h1>
-        <Box cols={{ base: 1, md: 2 }} gap={6}>
+        <Box cols={2} gap={6}>
          <!-- Content -->
         </Box>
       </Container>
@@ -222,7 +216,7 @@ All components accept a \`class\` prop for custom styling:
   <h2>Section Title</h2>
   <p>Section content...</p>
 
-  <Box cols={{ base: 1, md: 2 }} gap={4}>
+  <Box cols={3} gap={4}>
     <!-- Grid content  -->
   </Box>
 </Article>
