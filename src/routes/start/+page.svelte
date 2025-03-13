@@ -16,7 +16,7 @@ Svelte Craft is a lightweight, flexible design system for building responsive la
 
 ## Requirements
 
-- Sveltekit or higher (recommended 20+)
+- Sveltekit
 - Shadcn-svelte (for the color system)
 - Tailwind CSS
 - TypeScript (recommended)
@@ -24,21 +24,14 @@ Svelte Craft is a lightweight, flexible design system for building responsive la
 ## Quick Start
 
 \`\`\`bash
-# Using npm
 npx jsrepo add --repo github/sikandarjodd/craft
-
-# Using pnpm (recommended)
-pnpx jsrepo add --repo github/sikandarjodd/craft
-
-# Using yarn
-yarn npx jsrepo add --repo github/sikandarjodd/craft
 \`\`\`
 
 The installer will:
 
-1. Check your environment and dependencies
-2. Install and configure required packages
-3. Set up the Craft component in your project
+1. Install and configure required packages - tailiwnd-merge and clsx
+2. Set up the Craft component in your project
+3. Add <code>Layout, Prose, Container, Section</code> Components in you project
 
 ## Core Components
 
@@ -104,20 +97,6 @@ Similar to Article but without max-width constraints and header spacing. Perfect
   <!-- Rich text content -->
 </Prose>
 \`\`\`
-
-
-#### Type-Safe Props
-
-\`\`\`typescript
-interface BoxProps {
-  direction?: ResponsiveValue<"row" | "col">;
-  wrap?: ResponsiveValue<"wrap" | "nowrap">;
-  gap?: ResponsiveValue<0 | 1 | 2 | 3 | 4 | 5 | 6 | 8 | 10 | 12>;
-  cols?: ResponsiveValue<1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12>;
-  rows?: ResponsiveValue<1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12>;
-}
-\`\`\`
-
 
 ## Typography System
 
