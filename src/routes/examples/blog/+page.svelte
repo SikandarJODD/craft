@@ -125,7 +125,7 @@ npm run dev
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {#each projects as project}
               <div class="border rounded-lg px-4">
-                <a href={project.url} target="_blank" class="!no-underline">
+                <a href={project.url} target="_blank" class="no-underline!">
                   <figure>
                     <img
                       class="h-fit w-full object-cover object-center"

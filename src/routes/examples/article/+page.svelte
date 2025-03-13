@@ -3,8 +3,8 @@
   import Demo from "$lib/landing/Demo.svelte";
 </script>
 
-<Section>
-  <Container>
+<Section class='!py-0'>
+  <Container class='!py-0'>
     <div class="grid border">
       <Demo attribute="Example Article" vertical>
         <Article>
@@ -57,7 +57,7 @@ console.log("Hello, " + name + "!");
           </pre>
           <figure>
             <img
-              src="https://via.placeholder.com/600x300"
+              src="https://i.pinimg.com/736x/1e/73/23/1e7323a7c94ab09b848efff5cf3933c0.jpg"
               alt="Placeholder image"
             />
             <figcaption>
@@ -100,7 +100,7 @@ console.log("Hello, " + name + "!");
             <p>This is hidden content that appears when expanded.</p>
           </details>
           <hr />
-          <small>This article was last updated on May 1, 2023.</small>
+          <small>This article was last updated on 13 March 2025.</small>
         </Article>
       </Demo>
     </div>

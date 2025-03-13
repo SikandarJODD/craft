@@ -29,15 +29,15 @@
 </script>
 
 <Prose>
-  <Section>
-    <Container>
+  <Section class='!py-0'>
+    <Container class='!py-0'>
       <h3>Examples</h3>
       <div class="w-full mt-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {#each contents as content}
-          <a href={content.link} class="!no-underline">
-            <img class="!mb-1" src={content.img} alt={content.name} />
+          <a href={content.link} class="no-underline!">
+            <img class="mb-1!" src={content.img} alt={content.name} />
             <h6>{content.name}</h6>
-            <p class="!text-sm text-muted-foreground">{content.desc}</p>
+            <p class="text-sm! text-muted-foreground">{content.desc}</p>
           </a>
         {/each}
       </div>

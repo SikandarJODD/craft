@@ -4,8 +4,8 @@
 </script>
 
 <Prose>
-  <Section>
-    <Container class=''>
+  <Section class='my-0 !py-0'>
+    <Container class='my-0 !py-0'>
       <div class="border bg-accent/50 p-6">
         Svelte Craft is a minimalist Design System that combines a single component
         file and a single CSS file with Svelte best practices for building
