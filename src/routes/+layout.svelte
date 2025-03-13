@@ -15,8 +15,8 @@
 {@render children()}
 
 {#snippet Header()}
-  <Section>
-    <Container>
+  <Section class='mb-0'>
+    <Container class='mb-0 !py-6'>
       <div class="flex gap-4 items-center justify-between mb-8">
         <a href="/" aria-label="logo">
           <svg

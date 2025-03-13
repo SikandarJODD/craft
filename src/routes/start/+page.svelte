@@ -180,8 +180,8 @@ All components accept a \`class\` prop for custom styling:
   import { marked } from "marked";
 </script>
 
-<Section>
-  <Container>
+<Section class='!py-0'>
+  <Container class='!py-0'>
     <Prose>{@html marked(readMe)}</Prose>
   </Container>
 </Section>
